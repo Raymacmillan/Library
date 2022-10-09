@@ -1,2 +1,2 @@
 # Library
-Creating an object that will contains a list of books
+Creating an object that will contain a list of books
