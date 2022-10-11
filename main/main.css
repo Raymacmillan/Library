@@ -1,0 +1,176 @@
+@keyframes form_appear{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes form_disappear {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+
+    border-radius: 5px;
+
+    background: #0a2351;
+
+    padding: 50px;
+
+
+    animation: form_appear 400ms;
+}
+
+.hide_form {
+    animation: form_disappear 300ms;
+}
+
+.background_form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+
+   
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+form div + div {
+    margin-top: 20px;
+}
+
+form div input {
+    width: 100%;
+
+    padding: 5px 20px;
+
+    border: 1px solid rgba(0,0,0,0.2);
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    outline: 1px solid rgba(0,0,0,0.2);
+}
+
+form div label {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.showForm {
+    display: flex;
+}
+
+.submitbtn {
+    margin: auto;
+    width: 220px;
+    background-color: #1E90FF;
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.add_book {
+    background-color: #007791;
+    border-radius: 5px;
+
+    width: 220px;
+
+    padding: 10px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
+.library div {
+    background-color: #012169;
+    
+    border-radius: 5px;
+
+    padding: 30px;
+    width: 250px;
+
+    margin-top: 50px;
+}
+
+
+.library div,h1,h3,p {
+    color: white;
+}
+
+.library div button {
+    background-color: #007791;
+
+    border-radius: 5px;
+
+    width: 220px;
+
+    padding: 10px;
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+.library div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
